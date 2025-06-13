@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>南京一日游旅行规划表</title>
+    <!-- 使用Google Fonts和Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 打印友好A4尺寸设置 */
+        @page { size: A4; margin: 10mm; }
+        body {
+            font-family: 'Noto Sans SC', Arial, sans-serif;
+            background: #fff;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 190mm;
+            margin: 0 auto;
+            background: #fff;
+            padding: 10mm;
+            box-sizing: border-box;
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-top: 0;
+        }
+        .section {
+            margin-bottom: 18px;
+        }
+        .weather {
+            font-size: 1.1em;
+            margin-bottom: 6px;
+        }
+        .overview-table, .detail-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .overview-table th, .overview-table td, .detail-table th, .detail-table td {
+            border: 1px solid #bbb;
+            padding: 6px 8px;
+            text-align: center;
+        }
+        .overview-table th, .detail-table th {
+            background: #f2f2f2;
+        }
+        .icon {
+            margin-right: 4px;
+        }
+        .tips, .contacts {
+            font-size: 0.98em;
+            margin: 4px 0;
+        }
+        .print-btn {
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 6px 18px;
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        @media print {
+            .print-btn { display: none; }
+        }
+        .poi-img {
+            width: 60px; height: 40px; object-fit: cover; border-radius: 4px; margin-right: 6px;
+        }
+        .poi-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .poi-item { display: flex; align-items: center; margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button class="print-btn" onclick="window.print()"><i class="fa fa-print"></i> 打印本页</button>
+    <!-- 行程标题区 -->
+    <div class="section">
+        <h1>南京一日游</h1>
+        <div>日期：2025年6月12日（星期四）</div>
+        <div>旅行者：团队/个人</div>
+        <div class="weather">
+            <i class="fa fa-cloud-bolt"></i> 天气：雷阵雨，24°C/21°C，东南风4级
+        </div>
+    </div>
+    <!-- 行程概览区 -->
+    <div class="section">
+        <h2>行程概览</h2>
+        <table class="overview-table">
+            <tr><th>时间</th><th>活动</th><th>地点</th><th>类型</th></tr>
+            <tr><td>08:30-09:30</td><td>游览玄武湖景区</td><td>玄武门路1号</td><td><i class="fa fa-tree icon"></i>景点</td></tr>
+            <tr><td>10:00-11:30</td><td>参观中山陵景区</td><td>石象路7号</td><td><i class="fa fa-landmark icon"></i>景点</td></tr>
+            <tr><td>12:00-13:00</td><td>午餐：夫子庙美食街</td><td>夫子庙北门</td><td><i class="fa fa-utensils icon"></i>餐饮</td></tr>
+            <tr><td>13:30-15:00</td><td>游览夫子庙秦淮风光带</td><td>平江府路80-1</td><td><i class="fa fa-water icon"></i>景点</td></tr>
+            <tr><td>15:30-17:00</td><td>参观南京总统府</td><td>长江路292号</td><td><i class="fa fa-building-columns icon"></i>景点</td></tr>
+            <tr><td>17:30-19:00</td><td>老门东历史街区漫步</td><td>剪子巷54号</td><td><i class="fa fa-road icon"></i>景点</td></tr>
+            <tr><td>19:00-20:30</td><td>晚餐：南京大牌档</td><td>应天大街888号金鹰世界8层</td><td><i class="fa fa-utensils icon"></i>餐饮</td></tr>
+        </table>
+    </div>
+    <!-- 详细时间表区 -->
+    <div class="section">
+        <h2>详细时间表</h2>
+        <table class="detail-table">
+            <tr><th>时间</th><th>活动</th><th>地点</th><th>详情</th></tr>
+            <tr><td>08:30-09:30</td><td>玄武湖景区</td><td>玄武门路1号</td><td>免费，适合晨练和拍照</td></tr>
+            <tr><td>10:00-11:30</td><td>中山陵景区</td><td>石象路7号</td><td>建议提前预约，免费</td></tr>
+            <tr><td>12:00-13:00</td><td>夫子庙美食街</td><td>夫子庙北门</td><td>推荐鸭血粉丝汤、小笼包</td></tr>
+            <tr><td>13:30-15:00</td><td>夫子庙秦淮风光带</td><td>平江府路80-1</td><td>可乘船游览，门票约60元</td></tr>
+            <tr><td>15:30-17:00</td><td>南京总统府</td><td>长江路292号</td><td>门票40元，历史文化景点</td></tr>
+            <tr><td>17:30-19:00</td><td>老门东</td><td>剪子巷54号</td><td>历史街区，适合拍照和品尝小吃</td></tr>
+            <tr><td>19:00-20:30</td><td>南京大牌档</td><td>应天大街888号金鹰世界8层</td><td>本地特色菜，价格适中</td></tr>
+        </table>
+    </div>
+    <!-- 交通信息区 -->
+    <div class="section">
+        <h2>交通信息</h2>
+        <ul class="tips">
+            <li>玄武湖景区→中山陵景区：可乘地铁1号线转2号线，约30分钟</li>
+            <li>中山陵→夫子庙：地铁2号线转3号线，约40分钟</li>
+            <li>夫子庙→总统府：地铁3号线转2号线，约25分钟</li>
+            <li>总统府→老门东：步行或打车，约15分钟</li>
+            <li>老门东→南京大牌档（金鹰世界店）：地铁或打车，约30分钟</li>
+        </ul>
+    </div>
+    <!-- 住宿与餐饮区 -->
+    <div class="section">
+        <h2>住宿与餐饮推荐</h2>
+        <div class="poi-list">
+            <div class="poi-item"><img class="poi-img" src="http://store.is.autonavi.com/showpic/764a91ad7a5f99d8962537974c5ced99" alt="清沐精选酒店"><span>清沐精选酒店(奥体会展中心店)：江东中路313号</span></div>
+            <div class="poi-item"><img class="poi-img" src="http://store.is.autonavi.com/showpic/59bbcd82bdf5a5fcbd103a54bc0c34a8" alt="南京特色美食"><span>南京特色美食：中山陵商业街29号</span></div>
+            <div class="poi-item"><img class="poi-img" src="http://store.is.autonavi.com/showpic/b872abe2a284aa029af6d7a18402a0e0" alt="南京大牌档"><span>南京大牌档(金鹰世界店)：应天大街888号金鹰世界8层</span></div>
+            <div class="poi-item"><img class="poi-img" src="https://aos-comment.amap.com/B0J2JHBBWK/comment/d007d02de9af88001c8d3524c0dd3019_2048_2048_80.jpg" alt="夫子庙美食街"><span>夫子庙菲常南京美食街：夫子庙北门</span></div>
+        </div>
+    </div>
+    <!-- 实用信息区 -->
+    <div class="section">
+        <h2>实用信息</h2>
+        <ul class="tips">
+            <li>建议提前预约中山陵等热门景点门票</li>
+            <li>南京夏季多雨，出行请携带雨具</li>
+            <li>乘坐地铁、公交可使用支付宝/微信扫码</li>
+            <li>注意保管随身物品，景区人流较多</li>
+        </ul>
+        <div class="contacts">
+            <strong>重要电话：</strong><br>
+            旅游咨询：025-12301<br>
+            紧急求助：110（警察）/120（急救）
+        </div>
+    </div>
+</div>
+</body>
+</html> 
